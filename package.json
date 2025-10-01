@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "@ston-fi/sdk-example-next-js-app",
   "private": true,
   "type": "module",
@@ -50,5 +51,22 @@
     "globals": "15.15.0",
     "postcss": "8.5.3",
     "tailwindcss": "4.1.7"
+=======
+  "name": "root",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "cleanup": "rm -rf .turbo node_modules ./examples/**/{.next,.turbo,node_modules} ./packages/**/{.turbo,coverage,dist,node_modules,build-report.html}",
+    "lint": "biome lint ./*",
+    "format": "biome format ./*",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "lefthook": "1.11.12",
+    "turbo": "2.5.3",
+    "typescript": "^5"
+>>>>>>> a4a8ca417a02ce504252f9026bedf64cc56bde47
   }
 }
