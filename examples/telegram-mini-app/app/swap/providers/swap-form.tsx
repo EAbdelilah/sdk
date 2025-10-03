@@ -24,7 +24,10 @@ const initialState: SwapState = {
   askAsset: null,
   offerAmount: "",
   askAmount: "",
+  referralAddress: "UQDu8T1pByMbhAfzH45f_0jCwG73D0FonjAfUMEM0Aw9LVYX", // 👈 Replace with your address
+  referralValue: 1, // 👈 This is 0.5% (50 bps)
 };
+
 
 type IAction =
   | {

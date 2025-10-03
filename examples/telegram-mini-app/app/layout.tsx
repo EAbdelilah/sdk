@@ -12,7 +12,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ston.fi Swap",
+  title: "Eswap",
 };
 
 export default function RootLayout({
