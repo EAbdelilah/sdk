@@ -1,6 +1,7 @@
 "use client";
 
 import { RefreshCw, Settings } from "lucide-react";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
@@ -13,6 +14,7 @@ export const SwapFormHeader = () => {
 
   return (
     <div className="flex items-center gap-2">
+      <Image src="/logo.jpg" alt="logo" width={32} height={32} />
       <h1 className="text-xl leading-8 font-medium mr-auto">Swap</h1>
 
       <Button
