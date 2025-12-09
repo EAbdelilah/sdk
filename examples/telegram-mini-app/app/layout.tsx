@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { unstable_noStore as noStore } from "next/cache";
 import { Inter } from "next/font/google";
 
+import { AnalyticsProvider } from "@/components/analytics-provider";
 import { Header } from "@/components/header";
 import { NavBar } from "@/components/nav-bar";
 import { Toaster } from "@/components/ui/toaster";
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, "flex flex-col min-h-[100svh]")}>
         <Providers>
+          <AnalyticsProvider />
           <Header />
           <NavBar className="mx-auto" links={navBarLinks} />
           <main className="container flex flex-col flex-1 h-full py-10">
