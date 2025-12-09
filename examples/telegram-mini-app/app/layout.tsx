@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import { Header } from "@/components/header";
 import { NavBar } from "@/components/nav-bar";
+import { AnalyticsProvider } from "@/components/telegram/analytics-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { ROUTES } from "@/constants";
 import { cn } from "@/lib/utils";
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(inter.className, "flex flex-col min-h-[100svh]")}>
         <Providers>
+          <AnalyticsProvider />
           <Header />
           <NavBar className="mx-auto" links={navBarLinks} />
           <main className="container flex flex-col flex-1 h-full py-10">
