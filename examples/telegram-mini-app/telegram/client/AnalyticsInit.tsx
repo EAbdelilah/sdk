@@ -13,6 +13,8 @@ export default function AnalyticsInit() {
         token,
         appName,
       });
+    } else {
+      console.error('Telegram Analytics environment variables are not set.');
     }
   }, []);
 
