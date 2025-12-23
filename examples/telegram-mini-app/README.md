@@ -10,8 +10,10 @@ You can try the demo app [here](https://sdk-demo-app.ston.fi) or run it locally 
 pnpm install
 ```
 
-2. run the dev command
+2. create a `.env.local` file by copying the `.env.example` and filling in the required values.
+
+3. run the dev command
 
 ```sh
-turbo dev
+pnpm --filter @ston-fi/telegram-mini-app dev
 ```
